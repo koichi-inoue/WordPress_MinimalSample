@@ -133,8 +133,6 @@ header {
       }
 
 
-
-
 /****** main ******/
 
 main {
@@ -168,52 +166,6 @@ article {
     margin-bottom: 2rem;
   }
 
-  .post-meta{
-    margin-bottom: 1rem;
-    font-size: 0.75rem;
-    color: #999;
-  }
-
-  .post-meta .post-date,
-  .post-meta .category{
-    padding-right: 1em;
-  }
-
-  .post-meta .comment-num{
-    /* ここを表示すると、・・はコメントを受け付けていません・・と出るので非表示にしています　*/
-    /* white-space: nowrap; */
-    display: none;
-  }
-
-  .footer-post-meta{
-    margin-top: 2rem;
-    font-size: 0.75rem;
-    text-align: right;
-  }
-
-  .reply{
-    margin-bottom: 1rem;
-  }
-
-  .comment-meta {
-    font-size: 0.75rem;
-  }
-
-  .comment-notes{
-    font-size: 0.75rem;
-  }
-
-  #comment-area{
-    clear:both;
-  }
-
-  .comment-form-comment label{
-    display: none;
-  }
-
-  .logged-in-as {
-      font-size: 0.75rem;
-  }
 
 /****** aside ******/
 
@@ -223,8 +175,17 @@ aside {
 }
 
   aside h2{
+    font-size: 1rem;
     margin-bottom: 10px;
     font-family: 'Arial', sans-serif;
+  }
+
+  aside div {
+    margin-bottom: 2rem;
+  }
+
+  aside li{
+    font-size: 0.8rem;
   }
 
   #searchform{
@@ -240,12 +201,8 @@ aside {
       display: none;
     }
 
-  .widget{
-    margin-bottom: 60px;
-  }
-  .tagcloud a{
-    white-space: nowrap;
-  }
+
+
 
 
 /****** footer ******/
@@ -258,10 +215,82 @@ footer {
   color: #fff;
 }
 
+  footer ul.menu {
+    text-align: center;
+    margin: 0;
+  }
+
+    footer ul.menu li{
+      display: inline-block;
+      width: auto;
+      list-style: none;
+    }
+
+      footer ul.menu li a{
+        display: block;
+        padding: .5rem 1rem;
+        color: white;
+        font-size: 0.8rem;
+      }
+
+
   #copyright{
     padding: 20px 0;
-    font-size: 80%;
   }
+
+
+/****** WordPress Post/Comment *******/
+
+.post-meta{
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.post-meta .post-date,
+.post-meta .category{
+  padding-right: 1em;
+}
+
+.post-meta .comment-num{
+  /* ここを表示すると、・・はコメントを受け付けていません・・と出るので非表示にしています　*/
+  /* white-space: nowrap; */
+  display: none;
+}
+
+.footer-post-meta{
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.reply{
+  margin-bottom: 1rem;
+}
+
+.comment-meta {
+  font-size: 0.75rem;
+}
+
+.comment-notes{
+  font-size: 0.75rem;
+}
+
+#comment-area{
+  clear:both;
+}
+
+.comment-form-comment label{
+  display: none;
+}
+
+.logged-in-as {
+    font-size: 0.75rem;
+}
+
+.tagcloud a{
+  white-space: nowrap;
+}
 
 
 /*********** WordPress Misc ***********/

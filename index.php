@@ -5,16 +5,16 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <title>
     <?php
-    if ( is_single() ){ wp_title('::', true, 'right'); }
-    bloginfo('name');
+      if ( is_single() ){ wp_title('::', true, 'right'); }
+      bloginfo('name');
     ?>
   </title>
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url');echo'?'.filemtime(get_stylesheet_directory().'/style.css');?>" media="screen" />
   <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet" />
   <?php
-  if ( is_singular() ) {
-    wp_enqueue_script( "comment-reply" );
-  }
+    if ( is_singular() ) {
+      wp_enqueue_script( "comment-reply" );
+    }
   ?>
   <?php wp_head(); ?>
 </head>
@@ -27,7 +27,11 @@
   </header>
 
   <nav id="siteNavigator">
-    <?php wp_nav_menu( 'theme_location = header-navi' ); ?>
+    <?php
+      if ( has_nav_menu( 'header-navi' )){
+        wp_nav_menu( array('theme_location' => 'header-navi' ));
+      }
+    ?>
   </nav>
 
   <main>
@@ -72,18 +76,36 @@
 
     <aside>
 
-      <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-          <?php dynamic_sidebar( 'sidebar-1' ); ?>
-      <?php else: ?>
+    <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+        <?php dynamic_sidebar( 'sidebar-1' ); ?>
+    <?php else: ?>
 
       <div class="widget">
-        <h2>Recent posts</h2>
+          <?php get_search_form(); ?>
+      </div>
+
+      <div class="widget">
+        <h2>Categories</h2>
+        <ul>
+          <?php wp_list_categories('title_li='); ?>
+        </ul>
+      </div>
+
+      <div class="widget">
+        <h2>RecentPosts</h2>
         <ul>
           <?php $args = array(
             'type' => 'postbypost',
             'limit' => 5
           );
           wp_get_archives($args); ?>
+        </ul>
+      </div>
+
+      <div class="widget">
+        <h2>Archive</h2>
+        <ul>
+        <?php wp_get_archives(); ?>
         </ul>
       </div>
 
@@ -97,12 +119,18 @@
       </div>
 
     <?php endif; ?>
+    
     </aside>
 
   </main>
 
   <footer>
-      <p id="copyright" class="wrapper">&copy <?php bloginfo('name'); ?> All Rights Reserved.</p>
+    <?php
+      if ( has_nav_menu( 'footer-navi' )){
+        wp_nav_menu( array('theme_location' => 'footer-navi' ));
+      }
+    ?>
+    <p id="copyright" class="wrapper"><?php bloginfo('name'); ?></p>
   </footer>
 
   <?php wp_footer(); ?>
