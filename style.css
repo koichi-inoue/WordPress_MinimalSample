@@ -85,52 +85,51 @@ header {
   margin-bottom: 4rem;
 }
 
-  #siteNavigator ul.menu{
-    display: flex;
-    margin: 0;
-  }
+#siteNavigator ul.menu{
+  display: flex;
+  margin: 0;
+}
 
-    #siteNavigator ul.menu li{
-      width: auto;
-      margin-right: 2rem;
-      list-style: none;
-    }
+#siteNavigator ul.menu li{
+  width: auto;
+  margin-right: 2rem;
+  list-style: none;
+}
 
-      #siteNavigator ul.menu li a{
-        display: block;
-        padding: .5rem 0;
-      }
+#siteNavigator ul.menu li a{
+  display: block;
+  padding: .5rem 0;
+}
 
-      #siteNavigator ul.sub-menu{
-        visibility: hidden;
-        position: absolute;
-        top:2.5rem;
-        left: 0;
-        display: flex;
-        margin: 0;
-        padding-top: 0.5rem;
-        padding-bottom: 1rem;
-        padding-left: 8%;
-        padding-right: 8%;
-        width: 84%;
-        background-color: #DDD;
-      }
+#siteNavigator ul.sub-menu{
+  visibility: hidden;
+  position: absolute;
+  top:2.5rem;
+  left: 0;
+  display: flex;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-left: 8%;
+  padding-right: 8%;
+  width: 84%;
+  background-color: #DDD;
+}
 
-      #siteNavigator ul.sub-menu li{
-        width: auto;
-        margin-right: 2rem;
-        list-style: none;
-      }
+#siteNavigator ul.sub-menu li{
+  width: auto;
+  margin-right: 2rem;
+  list-style: none;
+}
 
-      #siteNavigator ul.sub-menu li a{
-        display: block;
-        padding: .5rem 0;
-      }
+#siteNavigator ul.sub-menu li a{
+  display: block;
+  padding: .5rem 0;
+}
 
-
-      #siteNavigator ul.menu li:hover ul.sub-menu{
-        visibility:visible;
-      }
+#siteNavigator ul.menu li:hover ul.sub-menu{
+  visibility:visible;
+}
 
 
 /****** main ******/
@@ -150,21 +149,21 @@ article {
   width: 67%;
 }
 
-  article .post,
-  article .page{
-    overflow: hidden;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid transparent;
-  }
+article .post,
+article .page{
+  overflow: hidden;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid transparent;
+}
 
-  article .navigation {
-    width:100%;
-    height:2rem;
-    border-top: 1px dotted gray;
-    padding-top: 0.5rem;
-    border-bottom: 1px dotted gray;
-    margin-bottom: 2rem;
-  }
+article .navigation {
+  width:100%;
+  height:2rem;
+  border-top: 1px dotted gray;
+  padding-top: 0.5rem;
+  border-bottom: 1px dotted gray;
+  margin-bottom: 2rem;
+}
 
 
 /****** aside ******/
@@ -174,69 +173,65 @@ aside {
   min-width: 12rem;
 }
 
-  aside h2{
-    font-size: 1rem;
-    margin-bottom: 10px;
-    font-family: 'Arial', sans-serif;
-  }
+aside h2{
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+}
 
-  aside div {
-    margin-bottom: 2rem;
-  }
+aside div {
+  margin-bottom: 2rem;
+}
 
-  aside li{
-    font-size: 0.8rem;
-  }
+aside li {
+  font-size: 0.8rem;
+}
 
-  #searchform{
-    position: relative;
-  }
+#searchform {
+  position: relative;
+}
 
-    #searchText{
-      padding: 6px 5% 6px 5%;
-      width: 90%;
-    }
+#searchform input[type="text"] {
+  padding: 6px 5% 6px 5%;
+  width: 90%;
+}
 
-    #searchsubmit{
-      display: none;
-    }
-
-
-
+#searchform label, #searchform input[type="submit"] {
+  display: none;
+}
 
 
 /****** footer ******/
 
 footer {
-  height: 8rem;
+  height: 9rem;
   padding-top: 1.5rem;
   background: #555;
   text-align: center;
   color: #fff;
 }
 
-  footer ul.menu {
-    text-align: center;
-    margin: 0;
-  }
+footer ul.menu {
+  text-align: center;
+  margin: 0;
+}
 
-    footer ul.menu li{
-      display: inline-block;
-      width: auto;
-      list-style: none;
-    }
+footer ul.menu li{
+  display: inline-block;
+  width: auto;
+  list-style: none;
+}
 
-      footer ul.menu li a{
-        display: block;
-        padding: .5rem 1rem;
-        color: white;
-        font-size: 0.8rem;
-      }
+footer ul.menu li a{
+  display: block;
+  padding: .5rem 1rem;
+  color: white;
+  font-size: 0.8rem;
+}
 
-
-  #copyright{
-    padding: 20px 0;
-  }
+#copyright{
+  padding: 20px 0;
+}
 
 
 /****** WordPress Post/Comment *******/

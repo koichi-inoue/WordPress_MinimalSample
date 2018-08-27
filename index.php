@@ -119,7 +119,7 @@
       </div>
 
     <?php endif; ?>
-    
+
     </aside>
 
   </main>
@@ -130,7 +130,7 @@
         wp_nav_menu( array('theme_location' => 'footer-navi' ));
       }
     ?>
-    <p id="copyright" class="wrapper"><?php bloginfo('name'); ?></p>
+    <p id="copyright" class="wrapper">&copy; <?php bloginfo('name'); ?></p>
   </footer>
 
   <?php wp_footer(); ?>
