@@ -3,7 +3,7 @@
   Theme Name: MinimalSample
 ****************************************/
 
-/************** BASIC *****************/
+/************** BASE *****************/
 
 *{
   margin: 0;
@@ -234,7 +234,7 @@ footer ul.menu li a{
 }
 
 
-/****** WordPress Post/Comment *******/
+/****** WordPress Module *******/
 
 .post-meta{
   margin-bottom: 1rem;
