@@ -1,5 +1,4 @@
 # WordPress_MinimalSample
 WordPress Minimal Sample
+必要最小限のファイル数でテーマを構成したサンプルです。
 
-実際の表示は以下のようになります。
-http://art.kyusan-u.ac.jp/opensquare_wp/
